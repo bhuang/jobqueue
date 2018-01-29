@@ -1,7 +1,7 @@
 
   $("#submit_url_form").submit(function( event ) {
 	  var data = { url: $('#submit_url_form_url').val() };
-	  var posting = $.post( './Job/create.php', data );
+	  var posting = $.post( './Jobs/create.php', data );
       posting.done(function( data ) {
 		  if(data.jobId) {
 			  $("#submit_url_result").text("Job Id: " + data.jobId);
@@ -16,7 +16,7 @@
 
 $("#job_status_form").submit(function( event ) {
 	var data = { id: $('#job_status_form_job_id').val() };
-	var getting = $.get( './Job/read.php', data );
+	var getting = $.get( './Jobs/read.php', data );
 
 	      /* Alerts the results */
 	      getting.done(function( data ) {

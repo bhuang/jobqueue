@@ -22,7 +22,7 @@
  
 	<div id="submit_url">
 		<div>
-			<form id="submit_url_form" action="./Job/create.php">
+			<form id="submit_url_form" action="./Jobs/create.php">
 			  Submit Url:
 			  <input id="submit_url_form_url" type="text" name="url">
 			  <input id="submit_url_form_submit" type="submit" value="Submit">
@@ -35,7 +35,7 @@
 
 	<div id="job_status">
 		<div>
-			<form id="job_status_form" action="./Job/read.php">
+			<form id="job_status_form" action="./Jobs/read.php">
 			  Job Id:
 			  <input id="job_status_form_job_id" type="text" name="id">
 			  <input type="submit" value="Submit">
